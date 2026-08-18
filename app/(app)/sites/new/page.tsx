@@ -1,0 +1,1 @@
+import {Editor} from '@/components/site-builder/editor';import {previewSite} from '@/lib/data';export default function New(){return <Editor initial={{...previewSite,id:'new',slug:'untitled-site',status:'draft',business:{...previewSite.business,name:'Untitled business'},services:[]}}/>}
