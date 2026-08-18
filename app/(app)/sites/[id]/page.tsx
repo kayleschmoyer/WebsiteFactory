@@ -1,0 +1,1 @@
+import {notFound} from 'next/navigation';import {getSite} from '@/lib/data';import {Editor} from '@/components/site-builder/editor';export default async function Page({params}:{params:Promise<{id:string}>}){const {id}=await params;const site=getSite(id);if(!site)notFound();return <Editor initial={site}/>}
